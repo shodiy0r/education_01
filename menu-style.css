@@ -1,0 +1,105 @@
+.sidepanel {
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: -100%;
+    left: 0;
+    background-color: #FAFAFA;
+    overflow-x: hidden;
+    padding: 16px;
+    transition: 0.5s;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 16px 16px;
+    color: #101130;
+}
+
+.sidepanel_nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.openbtn {
+    cursor: pointer;
+    display: none;
+    border-radius: 100px;
+    padding: 0 4px;
+    border: none;
+}
+
+.sidepanel .button_mode {
+    display: inline-block;
+    margin-right: 12px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.sidepanel>div>a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -0.01em;
+    width: auto;
+    transition: 0.3s;
+    text-decoration: none;
+    color: #101130;
+}
+
+.sidepanel_link {
+    margin: 7px 0;
+}
+
+.sidepanel .sign_in {
+    width: 100%;
+    padding: 12px;
+    display: block;
+    background: #D2FFEA;
+    border-radius: 16px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #3BB77E;
+    text-decoration: none;
+}
+
+.sidepanel>div>a:active, 
+.sidepanel>div>a:focus, 
+.sidepanel>div>a:hover{
+    color: #3BB77E;
+}
+
+.sidepanel .closebtn {
+    text-decoration: none;
+    font-size: 36px;
+    padding: 5px 15px;
+    border-radius: 50px;
+    background-color: #D2FFEA;
+    color: #3BB77E;
+}
+
+.sidepanel hr {
+    border: 1px solid #3BB77E;
+    margin: 30px 0;
+}
+
+/*================ darkSidepanel =================*/
+
+
+@media only screen and (max-width: 950px) {
+    .sidepanel>button {
+        display: block !important;
+    }
+    .dark_navbar .openbtn, .openbtn {
+        display: block;
+    }
+    .dark_navbar .button_mode {
+        display: none;
+    }
+}

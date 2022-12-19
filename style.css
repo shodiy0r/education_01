@@ -1,0 +1,1424 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Inter:wght@600;700&family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap');
+:root {
+    --Roboto:'Roboto', sans-serif;
+    --Inter:'Inter', sans-serif;
+    --Poppins: 'Poppins', sans-serif;
+    --Baloo: 'Baloo 2', sans-serif;
+    --Background: #ffffff;
+    --Darkblue:  #000000;
+    --Gray:#606176;
+    --Button: #D2FFEA;
+    --Button-color: #3BB77E;
+    --Border:#2076FF;
+    --Color:#2076FF;
+    --Border-color:#2076FF;
+    --Background-button:#fcfcfc;
+    --Regular: #EDF3FF;
+    --Mideum: #fef0c36c;
+    --Primeum: #d2f1e196;
+    --Regular:#cadeff92;
+    --Regular-text:#606176;
+    --Mideum:  #FFFBED;
+    --Mideum-text:#606176;
+    --Primeum:  #d2f1e186;
+    --Primeum-text:#606176;
+    --Regular_color:#101130;
+    --Logo-color:#101130;
+    
+  
+   
+    
+}
+.dark-theme{
+    --Inter:'Inter', sans-serif;
+    --Inter:'Inter', sans-serif;
+    --Poppins: 'Poppins', sans-serif;
+    --Baloo: 'Baloo 2', sans-serif;
+    --Background:#101130;
+    --Darkblue:  #ffffff;
+    --Gray:#989898;
+    --Button: #3BB77E;
+    --Button-color: #ffffff;
+    --Border:#2076FF;
+    --Color:#2076FF;
+    --Border-color:#2076FF;
+    --Background-button:#101130;
+    --Color:#2076FF;
+    --Regular:#cadeff;
+    --Regular-text:#606176;
+    --Mideum:  #FFFBED;
+    --Mideum-text:#606176;
+    --Primeum:  #d2f1e1;
+    --Primeum-text:#606176;
+    --Regular_color:#101130;     
+    --Logo-color:#ffffff;   
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--Roboto);
+}
+
+
+
+#icon{
+    cursor: pointer;
+}
+body{
+    background-color: var(--Background);
+    position: relative;
+    line-height:1.4;
+    color: var(--Darkblue);
+    position: relative;
+    
+}
+
+.container
+{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+
+/* header style start */
+
+header{
+    padding: 1.2rem;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+.navigation .logo a{
+    color:var(--Logo-color);
+    font-size: 24px;
+    display: block;
+    text-decoration: none;
+    font-family: var(--Baloo);
+    letter-spacing: 1px;
+}
+.navbar-nav{
+    padding: 0.8rem 0 0.2rem 0;
+}
+.navbar-nav a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    font-family: var(--Poppins);
+    color: var(--Darkblue);
+    padding-right: 22.5px;
+    padding-left: 22.5px;
+}
+.navbar-nav a:hover{
+    color: var(--Darkblue);
+}
+
+.navbar-button{
+    display: flex;
+}
+.button_mode{
+    margin-right: 10px;
+    background: var(--Button);
+    border-radius: 16px;
+    border: none;
+    padding: 10px 10px;
+}
+.button_mode a img{
+    width: 30px;
+    height: 29px;
+}
+.button_text{
+    background: var(--Button);
+    border-radius: 12px;
+    border: none;
+    padding: 15px 37px 16px 36px;
+}
+.button_text a{
+    
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    border: none;
+    color: var(--Button-color);
+}
+
+/* Header banner style */
+.banner{
+    padding-top: 123px;
+}
+.banner_blog
+{
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 13rem;
+}
+.discover_text
+{
+    font-style: normal;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: var(--Poppins);
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 72px;
+    color: var(--Darkblue);
+}
+.discover_paragrif
+{
+    padding-top: 28px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: var(--Gray);
+    padding-bottom: 33px;
+    font-family: var(--Roboto);
+    
+}
+.discover_button{
+    border: none;
+    padding: 20px 50px;
+    background: var(--Button);
+    border-radius: 16px;
+}
+.discover_button a
+{
+    font-family: var(--Inter);
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    color:var(--Button-color);
+}
+.discover_tittle
+{
+    padding-top: 35px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--Gray);
+}
+.discover_tittle a{
+    color: #2076FF;
+}
+
+/* -------------------stop section-------------- */
+
+.plans{
+    align-items: center;
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.plans_idea_text{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 56px;
+    font-family: var(--Poppins);
+}
+.plans_taip{
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.virtual_learning_blog{
+    cursor: pointer;
+}
+.virtual_learning_text{
+    padding-top: 26px;
+    padding-bottom: 12px;
+    font-family: var();
+    color: var(--Darkblue);
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+.virtual_learning_tittle{
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/*---------------HEADER START STYLE--------------*/
+
+
+.school_works{
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.school_works_tittle{
+    font-family: var(--Poppins);
+    color: var(--Darkblue);
+    letter-spacing: -0.01em;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 56px;
+    width: 70%;
+}
+
+.all_courses1 button{
+    border: 1px solid ;
+    padding: 15px 25px;
+    background: var(--Background-button);
+    border: 1px solid var(--Border);
+    border-radius:18px;
+}
+.all_courses{
+    text-decoration: none;
+    color: var(--Color);
+    font-size: 18px;
+ 
+}
+
+
+/* 
+.courses_button a{
+    padding: 23px 48px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color:var(--Color);
+    
+} */
+
+
+/* .courses_button :hover{
+    border: none;
+    border: none;
+    border-radius: 14px;
+    color: white;
+    background-color: var();
+} */
+.school_works-blog{
+    padding-top: 72px;
+    display: flex;
+    justify-content: space-between;
+}
+.blog_img{
+    width: 100%;
+}
+.directions_text{
+    width: 283px;
+    padding: 16px 0px 38px 0px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 2rem;
+    font-family: var(--Poppins);
+    color: var(--Darkblue);
+}
+.text_icons p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    font-family: var(--Roboto);
+    color: var(--Gray);
+}
+.icons_blog{
+    display: flex;
+    padding-bottom: 33px;
+}
+.text_icons{
+    display: flex;
+}
+.text_icons1{
+    margin-left: 32px;
+    display: flex;
+}
+.text_icons1 img{
+    margin-right: 12px;
+}
+.text_icons img{
+    margin-right: 12px;
+}
+
+.all_courses1 button{
+    border: 1px solid ;
+    /* padding: 15px 25px; */
+    background: var(--Background-button);
+    border: 1px solid var(--Border);
+    border-radius:18px;
+}
+
+.all_courses11{
+    width: 100%;
+    padding: 12px 0px;
+    background: var(--Background-button);
+    border: 1px solid var(--Border);
+    border-radius:18px;
+}
+
+.all_courses{
+    text-decoration: none;
+    color: var(--Color);
+    font-size: 18px;
+ 
+}
+
+
+
+
+
+
+/* .courses_button1 :hover{
+    border: none;
+    border-radius: 14px;
+    color: var(--Color);
+    background-color: var(--Background-button);
+} */
+
+
+/*---------------HEADER START STYLE--------------*/
+
+.education{
+    align-items: center;
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+}
+.educataion_text{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 56px;
+    font-family: var(--Poppins);
+    color: var(--Darkblue);
+    letter-spacing: -0.01em;
+}
+.educataion_tittle{
+    padding-top: 35px;
+    padding-bottom: 25px;
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--Gray);
+}
+.lecture_blog{
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+}
+.happy_edu{
+    width: 100%;
+}
+.Lecture_blog_text{
+    margin-top: 62px;
+    padding: 20px 33px 21px 32px;
+    background:var(--Background);
+    box-shadow: 0px 20px 25px -12px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+.Lecture_blog_text p{
+    font-family: var(--Inter);
+    padding-top: 12px;
+}
+
+
+/*-- ------------------------- STOP SECTION-----------------*/
+/*-- ------------------------- START HEADER-----------------*/
+
+
+
+
+.academy_text{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.Besnik_Academy{
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20rem;
+    padding: 0px 80px;
+}
+.academy_text_paragrif{
+    width: 50%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 56px;
+    font-family: var(--Inter);
+    letter-spacing: -0.01em;
+}
+.setrilka_img1{
+    margin-right: 34px;
+}
+.education_person{
+    display: flex;
+    align-items: center;
+}
+.mathematics{
+    padding-top: 60px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    font-family: var(--Inter);
+    color: var(--Darkblue);
+}
+.profile{
+    padding-top: 35px;
+    padding-bottom: 48px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: var(--Roboto);
+    color: var(--Gray);
+}
+.education_person_text{
+    margin-left: 27px;
+}
+.person_name{
+    font-family: var(--Roboto);
+    font-size: 20px;
+    padding-bottom: 4px;
+}
+.person_live{
+    font-family: var(--Roboto);
+    color: var(--Gray);
+    font-size: 14px;
+    padding-bottom: 4px;
+}
+
+.setrilka{
+    display: none;
+}
+
+/* ----------------STOP HEADER---------- */
+/* ----------------START SECTION---------- */
+/* __________ */
+
+.school_works1{
+    padding-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.school_works1_tittle{
+    font-family: var(--Poppins);
+    color: var(--Darkblue);
+    letter-spacing: -0.01em;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    width: 80%;
+}
+
+.content_blog{
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.regular{
+    background-color:var(--Regular);
+    border-radius: 18px;
+}
+.regular_paragrif{
+    padding: 36px 106px;
+    border-radius:18px 18px 0px 0px;
+    text-align: center;
+    color: white;
+    background: #2076FF;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 38px;
+    font-family: var(--Inter);
+}
+.regular_button button{
+    border-radius: 50%;
+    border:none;
+    width: 12px;
+    height: 12px;
+    background-color: #2076FF;
+}
+.regular_button_text button{
+    border-radius: 50%;
+    border:none;
+    width: 12px;
+    height: 12px;
+    background-color: #2076FF;
+}
+.regular_buy1{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #2076FF;
+    background-color: var(--Regular);
+    border-radius: 14px;
+}
+.regular_buy1 :hover{
+    display: flex;
+    border:none;
+    border-radius: 14px;
+    background-color: #2076FF;
+    color: white;
+    
+}
+.regular_button{
+    margin-left: 42px;
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.regular_buy1 a{
+    padding: 23px 88px 23px 88px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #2076FF;
+}
+.regular_button{
+    margin-left: 42px;
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+}
+.regular_button p{
+    
+    color: var(--Regular-text);
+    font-family: var(--Inter);
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 15px;
+}
+.regular_button button{
+    border-radius: 50%;
+    border:none;
+    width: 12px;
+    height: 12px;
+    background-color: #2076FF;
+}
+
+
+
+.regular_button_text{
+    margin-left: 42px;
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 83px;
+}
+.regular_button_text p{
+    
+    color: var(--Regular-text);
+    font-family: var(--Inter);
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 15px;
+}
+.regular_button_text button{
+    border-radius: 50%;
+    border:none;
+    width: 12px;
+    height: 12px;
+    background-color: #2076FF;
+}
+
+/*  */
+
+
+
+.regular1{
+    background-color:var(--Mideum);
+    border-radius: 18px;
+}
+.regular_paragrif1{
+    padding: 36px 106px;
+    border-radius:18px 18px 0px 0px;
+    text-align: center;
+    color: white;
+    background-color: #F6C07A;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 38px;
+    font-family: var(--Inter);
+}
+.regular_text{
+    padding-top: 48px;
+    text-align: center;
+    font-family: var(--Inter);
+    color: var(--Regular_color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 38px;
+}
+.regular_button1{
+    margin-left: 42px;
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+}
+.regular_button1 button{
+    border-radius: 50%;
+    border:none;
+    width: 12px;
+    height: 12px;
+    background-color: #F6C07A;
+}
+.regular_button1 p{
+    
+    color: var(--Mideum-text);
+    font-family: var(--Inter);
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 15px;
+}
+
+
+.regular_button1_text{
+    margin-left: 42px;
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    margin-bottom: 83px;
+}
+.regular_button1_text button{
+    border-radius: 50%;
+    border:none;
+    width: 12px;
+    height: 12px;
+    background-color: #F6C07A;
+}
+.regular_button1_text p{
+    
+    color: var(--Mideum-text);
+    font-family: var(--Inter);
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 15px;
+    
+}
+
+
+
+
+.regular_buy2{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-color:#fef0c342;
+    border: 1px solid #F6C07A;
+    border-radius: 14px;
+    margin-bottom: 12px;
+}
+.regular_buy2 a{
+    padding: 23px 88px 23px 88px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #F6C07A;
+}
+
+
+.regular_buy2 :hover{
+    border: none;
+    border-radius: 14px;
+    background-color: #F6C07A;
+    color: white;
+    
+    
+}
+
+
+
+/* --------------- */
+
+
+
+
+
+
+.regular2{
+    background-color:var(--Primeum);
+    border-radius: 18px;
+}
+
+
+.regular_paragrif2{
+    padding: 36px 106px;
+    border-radius:18px 18px 0px 0px;
+    text-align: center;
+    color: white;
+    background-color: #3BB77E;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 38px;
+    font-family: var(--Inter);
+}
+.regular_button2{
+    margin-left: 42px;
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+}
+.regular_button2 button{
+    border-radius: 50%;
+    border:none;
+    width: 12px;
+    height: 12px;
+    background-color: #3BB77E;
+}
+
+.regular_button2 p{
+    
+    color: var(--Primeum-text);
+    font-family: var(--Inter);
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 15px;
+}
+
+
+.regular_button2_text{
+    margin-left: 42px;
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 83px;
+}
+.regular_button2_text button{
+    border-radius: 50%;
+    border:none;
+    width: 12px;
+    height: 12px;
+    background-color: #3BB77E;
+}
+
+.regular_button2_text p{
+    
+    color: var(--Primeum-text);
+    font-family: var(--Inter);
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 15px;
+}
+.regular_buy3{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #3BB77E;
+    background-color:#3bb77d15;
+    border-radius: 14px;
+    margin-bottom: 12px;
+}
+
+
+.regular_buy3 a{
+    padding: 23px 88px 23px 88px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #3BB77E;
+}
+
+
+.regular_buy3 :hover{
+    border: none;
+    border-radius: 14px;
+    color: white;
+    background-color: #3BB77E;
+}
+/* --------------START SECTION--------------- */
+
+/* --------------START FOOTER--------------- */
+
+
+#footer {
+    padding-top: 90px;
+    padding-bottom: 120px;
+    text-align: left;
+}
+
+.footer__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 90px 0;
+}
+
+.our__motto {
+    width: 285px;
+}
+
+.footer__item__padding {
+    padding: 20px 30px;
+}
+
+.footer__item__padding:nth-child(1) {
+    padding-left: 0 !important;
+}
+
+.footer__item__padding:nth-child(4) {
+    padding-right: 0 !important;
+}
+
+.footer__bold__title {
+    padding-bottom: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.footer__bold__title:nth-child(0) {
+    padding-bottom: 10px !important;
+}
+
+.our__motto__text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--Gray);
+}
+
+.footer__about ul li,
+.footer__support ul li,
+.footer__about ul li a,
+.footer__support ul li a {
+    list-style: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: var(--Gray);
+    padding: 1px 0;
+    transition: all .3s;
+}
+
+.footer__about ul li a:hover,
+.footer__support ul li a:hover {
+    color: var(--Darkblue);
+}
+
+.footer__about ul li,
+.footer__support ul li {
+    padding: 7px 0;
+}
+
+.footer__get_up__img {
+    margin: 10px 0;
+}
+
+.footer__bottom__text {
+    margin-top: 40px;
+}
+
+.copyright {
+    /* font-size: 20px; */
+    color: blue;
+    font-weight: 600;
+}
+
+.copyright_span {
+    color: red;
+}
+
+
+
+
+
+
+
+.navbar_img {
+    display: none;
+}
+
+@media only screen and (max-width: 1100px) {
+    .banner_img{
+        width: 30%;
+    }
+    .banner_blog
+    {
+        display: flex;
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .school_works-blog{
+        
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15rem;
+    }
+    .plans{
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+    .plans_product_img img{
+        display: none;
+    }
+    .Besnik_Academy{
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;   
+    }
+    .content_blog{
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10rem;
+    }
+    .Besnik_Academy{
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20rem;
+        padding: 0px 80px;
+    }
+    .swiper{
+        height: 60%;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .navbar_img {
+        display: block;
+    }
+    .navbar-nav{
+        position: absolute;
+        top: 80px;
+    }
+    .navbar-nav a {
+        display: none;  
+    }
+    .button_text{
+        display: none;
+    }
+    .button_mode{
+        display: none;
+    }
+    /* Banner */
+    .banner_blog
+    {
+        /* display: flex; */
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 12rem;
+    }
+    .banner_img{
+        display: none;
+    }
+    /* ___ */ 
+    .plans{
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+    .plans_product_img img{
+        display: none;
+    }
+    /*  */
+    .school_works-blog{
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        
+    }
+    .school_works_button button{
+        display: none;
+    }   
+    .education{
+        align-items: center;
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .happy_edu{
+        width: 100%;
+    }
+    .plans_taip{
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+    .virtual_learning{
+        
+        display: flex;
+        align-items: center;
+        
+    }
+    .virtual_learning_blog{
+        padding-top: 29px;
+    }
+    .virtual_learning_blog1{
+        
+        margin-left: 22px;
+    }
+    /*  */
+    .Besnik_Academy{
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .Besnik_Academy_blog1{
+        display: none;
+    }
+    .school_works{
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .courses_button{
+        display: none;
+    }
+    
+    
+    
+}
+@media only screen and (max-width: 750px) {
+    .content_blog{
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10rem;
+    }
+    .regular{
+        margin: 0 auto;
+        width: 70%;
+    }
+    .regular1{
+        margin: 0 auto;
+        width: 70%;
+    }
+    .regular2{
+        margin: 0 auto;
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .school_works-blog{
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog-directions img{
+        width: 100%;
+    }
+    .directions_text{
+        font-size: 30px;
+        width: 100%;
+        line-height: 2.5rem;
+    }
+    .icons_blog{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .happy_edu{
+        width: 100%;
+    }
+    .shools_course-shop button{
+        width: 100%;
+    }
+    .lecture_blog{
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    .Lecture_blog_text{
+        margin: 0 auto;
+        /* margin-top: 62px; */
+        padding: 10px 23px;
+        background: #FFFFFF;
+        box-shadow: 0px 20px 25px -12px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+    }
+    
+}
+@media only screen and (max-width: 560px) {
+    .discover_button{
+        width: 100%;
+        border: none;
+        padding: 20px 50px;
+        background: #D2FFEA;
+        border-radius: 16px;
+    }
+    .discover_text
+    {
+        font-style: normal;
+        font-size: 48px;
+        color: var(--Darkblue);
+    }
+    .discover_paragrif
+    {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .discover_paragrif
+    {
+        padding-top: 2px;
+    }
+    .virtual_learning_blog{
+        padding-top: 29px;
+        margin-right: 22px;
+    }
+    .virtual_learning{
+        
+        display: flex;
+        align-items: center;
+        
+    }
+    .virtual_learning_tittle
+    {
+        font-size: 18px;
+    }
+    .plans_taip{
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+    
+    
+    .plans_idea_text{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+        font-family: var(--Poppins);
+    }
+    .school_works-blog{
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        
+    }
+    .shools_course-shop button{
+        width: 100%;
+    }
+    .blog-directions img{
+        width: 100%;
+    }
+    .directions_text{
+        font-size: 25px;
+        width: 100%;
+    }
+    .icons_blog{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .Lecture_blog_text{
+        margin: 0 auto;
+        /* margin-top: 62px; */
+        padding: 5px 13px;
+        background: #FFFFFF;
+        box-shadow: 0px 20px 25px -12px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+    }
+    .educataion_text{
+        font-size: 35px;
+    }
+    .educataion_tittle{
+        font-size: 18px;
+        
+    }
+    .regular{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .regular1{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .regular2{
+        margin: 0 auto;
+        width: 90%;
+    }
+    /*  */
+    .discover_text{
+        font-size: 35px;
+        line-height: 3rem;
+    }
+    .discover_paragrif{
+        padding-top: 12px;
+    }
+    .plans_idea_text{
+        font-size: 35px;
+    }
+    .academy_text_paragrif{
+        font-size: 35px;
+    }
+    .school_works1_tittle{
+        font-size: 35px;
+        font-weight: 600;
+        letter-spacing: -0.1rem;
+        width: 80%;
+    }
+    .school_works_tittle{
+        font-size: 35px;
+        font-weight: 600;
+        letter-spacing: -0.1rem;
+        width: 80%;
+    }
+    .regular_paragrif{
+        font-size: 20px;
+    }
+    .regular_text{
+        font-size: 35px;
+    }
+    .regular_paragrif1{
+        font-size: 20px;
+    }
+    .regular_paragrif2{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .discover_text{
+        font-size: 30px;
+        line-height: 2rem;
+    }
+    .discover_paragrif{
+        padding-top: 10px;
+        font-size: 13px;
+    }
+    .plans_idea_text{
+        font-size: 30px;
+        line-height: 2rem;
+    }
+    .virtual_learning_blog img{
+        width: 60px;
+    }
+    .virtual_learning_tittle{
+        line-height: 1rem;
+        font-size: 13px;
+    }
+    .shools_course-shop button{
+        width: 100%;
+    }
+    .blog-directions img{
+        width: 100%;
+    }
+    
+    .icons_blog{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .school_works_tittle{
+        font-size: 30px;
+        line-height: 2rem;
+    }
+    
+    .Lecture_blog_text{
+        margin: 0 auto;
+        /* margin-top: 62px; */
+        padding: 1px 3px;
+        background: #FFFFFF;
+        box-shadow: 0px 20px 25px -12px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+    }
+    .happy_edu{
+        width: 100%;
+    }
+    .Lecture_blog_text img{
+        width: 50px;
+    }
+    .Lecture_blog_text p{
+        font-size: 12px;
+    }
+    .educataion_text{
+        font-size: 35px;
+        width: 100%;
+    }
+    .educataion_tittle{
+        font-size: 16px;
+    }
+    .courses_button1 {
+        width: 100%;
+    }
+    .courses_button1 a{
+        padding: 12px 22px;
+        width: 100%;
+    }
+    .discover_text{
+        font-style: 35px;
+    }
+    .school_works_tittle{
+        font-size: 35px;
+    }
+    .school_works1_tittle{
+        font-size: 35px;
+        width: 100%;
+    }
+    .directions_text{
+        font-size: 20px;
+    }
+    .academy_text_paragrif{
+        width: 100%;
+        font-size: 35px;
+    }
+}
